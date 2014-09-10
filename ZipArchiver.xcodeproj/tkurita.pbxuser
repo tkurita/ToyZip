@@ -1,0 +1,88 @@
+// !$*UTF8*$!
+{
+	2C15C6D219BFFA1300578C42 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 2CD704D219C05F74008E6B12 /* ZipArchiver */;
+		activeTarget = 2C15C6D919BFFA1300578C42 /* ZipArchiver */;
+		codeSenseManager = 2CD704E319C05F76008E6B12 /* Code sense */;
+		executables = (
+			2CD704D219C05F74008E6B12 /* ZipArchiver */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					379,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 432037749;
+			PBXWorkspaceStateSaveDate = 432037749;
+		};
+		sourceControlManager = 2CD704E219C05F76008E6B12 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	2C15C6D919BFFA1300578C42 /* ZipArchiver */ = {
+		activeExec = 0;
+		executables = (
+			2CD704D219C05F74008E6B12 /* ZipArchiver */,
+		);
+	};
+	2CD704D219C05F74008E6B12 /* ZipArchiver */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = ZipArchiver;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	2CD704E219C05F76008E6B12 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	2CD704E319C05F76008E6B12 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}
