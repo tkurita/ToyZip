@@ -1,52 +1,52 @@
 #import "AppController.h"
 #import "DonationReminder/DonationReminder.h"
 
-@interface NSString (ZipArchiver)
-- (NSAppleEventDescriptor *)appleEventDescriptor;
-@end
-
-@implementation NSString (ZipArchiver)
-
-- (NSAppleEventDescriptor *)appleEventDescriptor
-{
-    return [NSAppleEventDescriptor descriptorWithString:self];
-}
-
-@end
+#define useLog 0
 
 @implementation AppController
 
+/*
+- (void)applicationWillFinishLaunching:(NSNotification *)aNotification
+{
+    [[NSUserNotificationCenter defaultUserNotificationCenter] setDelegate:self];
+}
+ */
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	NSAppleEventDescriptor *ev = [[NSAppleEventManager sharedAppleEventManager] currentAppleEvent];
-    AEEventID evid = [ev eventID];
-	NSAppleEventDescriptor *prop_data;
-    BOOL should_process = NO;
-	switch (evid) {
-		case kAEOpenDocuments:
-			break;
-		case kAEOpenApplication:
-			prop_data = [ev paramDescriptorForKeyword: keyAEPropData];
-			DescType type = prop_data ? [prop_data descriptorType] : typeNull;
-			OSType value = 0;
-			if(type == typeType) {
-				value = [prop_data typeCodeValue];
-				switch (value) {
-					case keyAELaunchedAsLogInItem:
-						break;
-					case keyAELaunchedAsServiceItem:
-						break;
-				}
-			} else {
-				should_process = YES;
-			}
-			break;
-	}
-	
+    NSUserNotificationCenter *user_notification_center = [NSUserNotificationCenter defaultUserNotificationCenter];
+    [user_notification_center setDelegate:self];
 	[DonationReminder remindDonation];
-    if (should_process) {
-        [FileProcessor processFinderSelection];
+
+    NSDictionary *user_info = aNotification.userInfo;
+    NSUserNotification *user_notification = [user_info objectForKey:NSApplicationLaunchUserNotificationKey];
+    if (user_notification) {
+#if useLog
+        NSLog(@"UserNotification : %@", user_notification);
+        NSLog(@"userInfo : %@", user_notification.userInfo);
+#endif
+        //[user_notification_center removeDeliveredNotification:user_notification];
+        [[NSWorkspace sharedWorkspace] selectFile:user_notification.userInfo[@"path"] inFileViewerRootedAtPath:@""];
+        [NSApp terminate:self];
+        return;
     }
+    if ([[user_info objectForKey:NSApplicationLaunchIsDefaultLaunchKey] boolValue]) {
+         [FileProcessor processFinderSelection];
+    }
+}
+
+- (void)userNotificationCenter:(NSUserNotificationCenter *)center didActivateNotification:(NSUserNotification *)notification
+{
+#if useLog
+    NSLog(@"start didActivateNotification");
+    NSLog(@"path : %@", notification.userInfo[@"path"]);
+#endif
+    [[NSWorkspace sharedWorkspace] selectFile:notification.userInfo[@"path"] inFileViewerRootedAtPath:@""];
+}
+
+- (BOOL)userNotificationCenter:(NSUserNotificationCenter *)center shouldPresentNotification:(NSUserNotification *)notification
+{
+    return YES;
 }
 
 - (void)application:(NSApplication *)sender openFiles:(NSArray *)array

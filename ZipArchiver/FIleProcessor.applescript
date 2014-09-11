@@ -4,7 +4,8 @@ script FileProcessor
     property FinderSelection : module
     property XFile : module
     property loader : boot (module loader) for me
-    
+    property NSDictionary : class "NSDictionary"
+    property NSUserNotification : class "NSUserNotification"
     
     on processFinderSelection()
         try
@@ -21,15 +22,18 @@ script FileProcessor
         end try
         quit
     end processFinderSelection
-	
     
     on main(a_list)
         set uncenter to current application's NSUserNotificationCenter's defaultUserNotificationCenter
         repeat with an_item in a_list
             set an_archive to archive(contents of an_item)
-            set a_notification to current application's NSUserNotification's alloc()'s init()
-            set a_notification's title to (localized string "Success to archive.")
-            set a_notification's informativeText to an_archive's item_name()
+            set user_info to NSDictionary's dictionaryWithObject_forKey_(an_archive's posix_path(), "path")
+            set a_notification to NSUserNotification's alloc()'s init()
+            tell a_notification
+                set its title to (localized string "Success to archive.")
+                set its informativeText to an_archive's item_name()
+                set its userInfo to user_info
+            end tell
             uncenter's deliverNotification_(a_notification)
         end repeat
     end main
