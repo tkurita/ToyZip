@@ -31,7 +31,7 @@
         return;
     }
     if ([[user_info objectForKey:NSApplicationLaunchIsDefaultLaunchKey] boolValue]) {
-         [FileProcessor processFinderSelection];
+         [fileProcessorInstance processFinderSelection];
     }
 }
 
@@ -51,6 +51,6 @@
 
 - (void)application:(NSApplication *)sender openFiles:(NSArray *)array
 {
-    [FileProcessor processFiles:array];
+    [fileProcessorInstance processFiles:array];
 }
 @end
