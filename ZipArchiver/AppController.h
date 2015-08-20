@@ -5,7 +5,7 @@
 - (void)processFiles:(NSArray *)array;
 @end
 
-@interface AppController : NSObject {
+@interface AppController : NSObject <NSUserNotificationCenterDelegate>{
     IBOutlet FileProcessor *fileProcessorInstance;
 }
 
