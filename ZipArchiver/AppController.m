@@ -30,8 +30,35 @@
         [NSApp terminate:self];
         return;
     }
+    
     if ([[user_info objectForKey:NSApplicationLaunchIsDefaultLaunchKey] boolValue]) {
          [fileProcessorInstance processFinderSelection];
+    } else {
+        // launched to open or print a file, to perform a Service action
+        NSAppleEventDescriptor *ev = [[NSAppleEventManager sharedAppleEventManager] currentAppleEvent];
+        NSAppleEventDescriptor *prop_data;
+        switch ([ev eventID]) {
+                case kAEOpenDocuments:
+#if useLog
+                    NSLog(@"kAEOpenDocuments");
+#endif
+                    break;
+                case kAEOpenApplication:
+#if useLog
+                    NSLog(@"kAEOpenApplication : %@", [ev paramDescriptorForKeyword:keyAEPropData]);
+#endif
+                    prop_data = [ev paramDescriptorForKeyword:keyAEPropData];
+                    if (prop_data) {
+                        switch([prop_data enumCodeValue]) {
+                                case keyAELaunchedAsLogInItem:
+                                case keyAELaunchedAsServiceItem:
+                                    return;
+                        }
+                    } else {
+                        [fileProcessorInstance processFinderSelection];
+                    }
+                    break;
+        }
     }
 }
 
