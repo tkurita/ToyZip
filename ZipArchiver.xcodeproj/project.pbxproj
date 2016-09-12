@@ -16,7 +16,7 @@
 		2C15C6F519BFFA1300578C42 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C15C6F319BFFA1300578C42 /* MainMenu.xib */; };
 		2C15C6FD19C0229900578C42 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C15C6FC19C0229900578C42 /* AppController.m */; };
 		2C15C6FF19C05FB900578C42 /* DonationReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C15C6FE19C05FB900578C42 /* DonationReminder.framework */; };
-		2C15C70119C061F000578C42 /* DonationReminder.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C15C6FE19C05FB900578C42 /* DonationReminder.framework */; };
+		2C15C70119C061F000578C42 /* DonationReminder.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C15C6FE19C05FB900578C42 /* DonationReminder.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2C15C70719C06FF200578C42 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C15C70919C06FF200578C42 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -160,7 +160,7 @@
 		2C15C6D219BFFA1300578C42 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0730;
 			};
 			buildConfigurationList = 2C15C6D519BFFA1300578C42 /* Build configuration list for PBXProject "ZipArchiver" */;
 			compatibilityVersion = "Xcode 6.3";
@@ -259,6 +259,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -283,7 +284,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -319,6 +319,7 @@
 				GCC_PREFIX_HEADER = "ZipArchiver/ZipArchiver-Prefix.pch";
 				INFOPLIST_FILE = "ZipArchiver/ZipArchiver-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_BUNDLE_IDENTIFIER = "Scriptfactory.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -338,6 +339,7 @@
 				GCC_PREFIX_HEADER = "ZipArchiver/ZipArchiver-Prefix.pch";
 				INFOPLIST_FILE = "ZipArchiver/ZipArchiver-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_BUNDLE_IDENTIFIER = "Scriptfactory.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
