@@ -51,6 +51,14 @@ script FileProcessor
         quit
     end processFiles_
     
+    on copy_timestamp(x_source, x_dest)
+        tell current application's NSFileManager's defaultManager()
+            set attr to its attributesOfItemAtPath:(x_source's posix_path()) |error|:(missing value)
+            set a_dict to {NSFileCreationDate:attr's objectForKey:"NSFileCreationDate", NSFileModificationDate:attr's objectForKey:"NSFileModificationDate"}
+            its setAttributes:a_dict ofItemAtPath:(x_dest's posix_path()) |error|:(missing value)
+        end tell
+    end copy_timestamp
+
     on archive(an_item)
         set source_item to XFile's make_with(an_item)
         set a_folder to source_item's parent_folder()
@@ -64,6 +72,7 @@ script FileProcessor
          --sequesterRsrc ; resource folks are sotred under __MACOSX
          *)
         do shell script "ditto -c -k --sequesterRsrc " & opts & quoted form of (source_item's posix_path()) & space & quoted form of (target_item's posix_path())
+        copy_timestamp(source_item, target_item)
         return target_item
     end archive
 end script
