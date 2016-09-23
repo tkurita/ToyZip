@@ -34,16 +34,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2C15C6DA19BFFA1300578C42 /* ZipArchiver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZipArchiver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C15C6DA19BFFA1300578C42 /* ToyZip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToyZip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C15C6DD19BFFA1300578C42 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		2C15C6DF19BFFA1300578C42 /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
 		2C15C6E219BFFA1300578C42 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		2C15C6E319BFFA1300578C42 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		2C15C6E419BFFA1300578C42 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		2C15C6E719BFFA1300578C42 /* ZipArchiver-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZipArchiver-Info.plist"; sourceTree = "<group>"; };
+		2C15C6E719BFFA1300578C42 /* ToyZip-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToyZip-Info.plist"; sourceTree = "<group>"; };
 		2C15C6E919BFFA1300578C42 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2C15C6EB19BFFA1300578C42 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2C15C6ED19BFFA1300578C42 /* ZipArchiver-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZipArchiver-Prefix.pch"; sourceTree = "<group>"; };
+		2C15C6ED19BFFA1300578C42 /* ToyZip-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToyZip-Prefix.pch"; sourceTree = "<group>"; };
 		2C15C6EF19BFFA1300578C42 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		2C15C6F119BFFA1300578C42 /* FIleProcessor.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = FIleProcessor.applescript; sourceTree = "<group>"; };
 		2C15C6F419BFFA1300578C42 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -54,6 +54,7 @@
 		2C15C70A19C0733D00578C42 /* ja */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2C15C70B19C0733D00578C42 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2C15C70C19C0733D00578C42 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = ja; path = ja.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2C31576F1D86E223006C9604 /* memo.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = memo.md; path = ../memo.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +74,8 @@
 		2C15C6D119BFFA1300578C42 = {
 			isa = PBXGroup;
 			children = (
-				2C15C6E519BFFA1300578C42 /* ZipArchiver */,
+				2C31576F1D86E223006C9604 /* memo.md */,
+				2C15C6E519BFFA1300578C42 /* ZoyZip */,
 				2C15C6DC19BFFA1300578C42 /* Frameworks */,
 				2C15C6DB19BFFA1300578C42 /* Products */,
 			);
@@ -82,7 +84,7 @@
 		2C15C6DB19BFFA1300578C42 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C15C6DA19BFFA1300578C42 /* ZipArchiver.app */,
+				2C15C6DA19BFFA1300578C42 /* ToyZip.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,7 +110,7 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		2C15C6E519BFFA1300578C42 /* ZipArchiver */ = {
+		2C15C6E519BFFA1300578C42 /* ZoyZip */ = {
 			isa = PBXGroup;
 			children = (
 				2C15C6F119BFFA1300578C42 /* FIleProcessor.applescript */,
@@ -117,17 +119,18 @@
 				2C15C6F319BFFA1300578C42 /* MainMenu.xib */,
 				2C15C6E619BFFA1300578C42 /* Supporting Files */,
 			);
-			path = ZipArchiver;
+			name = ZoyZip;
+			path = ToyZip;
 			sourceTree = "<group>";
 		};
 		2C15C6E619BFFA1300578C42 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				2C15C70919C06FF200578C42 /* Localizable.strings */,
-				2C15C6E719BFFA1300578C42 /* ZipArchiver-Info.plist */,
+				2C15C6E719BFFA1300578C42 /* ToyZip-Info.plist */,
 				2C15C6E819BFFA1300578C42 /* InfoPlist.strings */,
 				2C15C6EB19BFFA1300578C42 /* main.m */,
-				2C15C6ED19BFFA1300578C42 /* ZipArchiver-Prefix.pch */,
+				2C15C6ED19BFFA1300578C42 /* ToyZip-Prefix.pch */,
 				2C15C6EE19BFFA1300578C42 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
@@ -136,9 +139,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2C15C6D919BFFA1300578C42 /* ZipArchiver */ = {
+		2C15C6D919BFFA1300578C42 /* ToyZip */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C15C6F819BFFA1300578C42 /* Build configuration list for PBXNativeTarget "ZipArchiver" */;
+			buildConfigurationList = 2C15C6F819BFFA1300578C42 /* Build configuration list for PBXNativeTarget "ToyZip" */;
 			buildPhases = (
 				2C15C6D619BFFA1300578C42 /* Sources */,
 				2C15C6D719BFFA1300578C42 /* Frameworks */,
@@ -149,9 +152,9 @@
 			);
 			dependencies = (
 			);
-			name = ZipArchiver;
+			name = ToyZip;
 			productName = ZipArchiver;
-			productReference = 2C15C6DA19BFFA1300578C42 /* ZipArchiver.app */;
+			productReference = 2C15C6DA19BFFA1300578C42 /* ToyZip.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -162,7 +165,7 @@
 			attributes = {
 				LastUpgradeCheck = 0730;
 			};
-			buildConfigurationList = 2C15C6D519BFFA1300578C42 /* Build configuration list for PBXProject "ZipArchiver" */;
+			buildConfigurationList = 2C15C6D519BFFA1300578C42 /* Build configuration list for PBXProject "ToyZip" */;
 			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -176,7 +179,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C15C6D919BFFA1300578C42 /* ZipArchiver */,
+				2C15C6D919BFFA1300578C42 /* ToyZip */,
 			);
 		};
 /* End PBXProject section */
@@ -316,11 +319,11 @@
 					"$(SRCROOT)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ZipArchiver/ZipArchiver-Prefix.pch";
-				INFOPLIST_FILE = "ZipArchiver/ZipArchiver-Info.plist";
+				GCC_PREFIX_HEADER = "ZipArchiver/ToyZip-Prefix.pch";
+				INFOPLIST_FILE = "ZipArchiver/ToyZip-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "Scriptfactory.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ToyZip;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -336,11 +339,11 @@
 					"$(SRCROOT)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ZipArchiver/ZipArchiver-Prefix.pch";
-				INFOPLIST_FILE = "ZipArchiver/ZipArchiver-Info.plist";
+				GCC_PREFIX_HEADER = "ZipArchiver/ToyZip-Prefix.pch";
+				INFOPLIST_FILE = "ZipArchiver/ToyZip-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "Scriptfactory.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ToyZip;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -348,7 +351,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C15C6D519BFFA1300578C42 /* Build configuration list for PBXProject "ZipArchiver" */ = {
+		2C15C6D519BFFA1300578C42 /* Build configuration list for PBXProject "ToyZip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C15C6F619BFFA1300578C42 /* Debug */,
@@ -357,7 +360,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C15C6F819BFFA1300578C42 /* Build configuration list for PBXNativeTarget "ZipArchiver" */ = {
+		2C15C6F819BFFA1300578C42 /* Build configuration list for PBXNativeTarget "ToyZip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C15C6F919BFFA1300578C42 /* Debug */,
