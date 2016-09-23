@@ -319,8 +319,8 @@
 					"$(SRCROOT)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ZipArchiver/ToyZip-Prefix.pch";
-				INFOPLIST_FILE = "ZipArchiver/ToyZip-Info.plist";
+				GCC_PREFIX_HEADER = "ToyZip/ToyZip-Prefix.pch";
+				INFOPLIST_FILE = "ToyZip/ToyZip-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "Scriptfactory.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = ToyZip;
@@ -339,8 +339,8 @@
 					"$(SRCROOT)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ZipArchiver/ToyZip-Prefix.pch";
-				INFOPLIST_FILE = "ZipArchiver/ToyZip-Info.plist";
+				GCC_PREFIX_HEADER = "ToyZip/ToyZip-Prefix.pch";
+				INFOPLIST_FILE = "ToyZip/ToyZip-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "Scriptfactory.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = ToyZip;
