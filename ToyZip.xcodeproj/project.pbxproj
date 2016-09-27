@@ -18,6 +18,7 @@
 		2C15C6FF19C05FB900578C42 /* DonationReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C15C6FE19C05FB900578C42 /* DonationReminder.framework */; };
 		2C15C70119C061F000578C42 /* DonationReminder.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C15C6FE19C05FB900578C42 /* DonationReminder.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		2C15C70719C06FF200578C42 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C15C70919C06FF200578C42 /* Localizable.strings */; };
+		2CD6833F1D9A1866007BD256 /* ToyZip.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2CD6833E1D9A1866007BD256 /* ToyZip.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +56,7 @@
 		2C15C70B19C0733D00578C42 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2C15C70C19C0733D00578C42 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = ja; path = ja.lproj/Credits.rtf; sourceTree = "<group>"; };
 		2C31576F1D86E223006C9604 /* memo.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = memo.md; path = ../memo.md; sourceTree = "<group>"; };
+		2CD6833E1D9A1866007BD256 /* ToyZip.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ToyZip.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		2C15C6E619BFFA1300578C42 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2CD6833E1D9A1866007BD256 /* ToyZip.icns */,
 				2C15C70919C06FF200578C42 /* Localizable.strings */,
 				2C15C6E719BFFA1300578C42 /* ToyZip-Info.plist */,
 				2C15C6E819BFFA1300578C42 /* InfoPlist.strings */,
@@ -191,6 +194,7 @@
 			files = (
 				2C15C6EA19BFFA1300578C42 /* InfoPlist.strings in Resources */,
 				2C15C6F019BFFA1300578C42 /* Credits.rtf in Resources */,
+				2CD6833F1D9A1866007BD256 /* ToyZip.icns in Resources */,
 				2C15C6F519BFFA1300578C42 /* MainMenu.xib in Resources */,
 				2C15C70719C06FF200578C42 /* Localizable.strings in Resources */,
 			);
