@@ -10,4 +10,7 @@
    <FileRef
       location = "group:Podfile">
    </FileRef>
+   <FileRef
+      location = "group:Makefile">
+   </FileRef>
 </Workspace>

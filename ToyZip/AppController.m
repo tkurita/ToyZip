@@ -1,5 +1,4 @@
 #import "AppController.h"
-#import "DonationReminder/DonationReminder.h"
 
 #define useLog 0
 
@@ -106,8 +105,4 @@
     [fileProcessorInstance processFiles:array];
 }
 
-- (IBAction)makeDonation:(id)sender
-{
-    [DonationReminder goToDonation];
-}
 @end

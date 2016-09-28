@@ -67,7 +67,6 @@
 		2C15C6ED19BFFA1300578C42 /* ToyZip-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToyZip-Prefix.pch"; sourceTree = "<group>"; };
 		2C15C6EF19BFFA1300578C42 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		2C15C6F119BFFA1300578C42 /* FIleProcessor.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = FIleProcessor.applescript; sourceTree = "<group>"; };
-		2C15C6F419BFFA1300578C42 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2C15C6FB19C0229900578C42 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		2C15C6FC19C0229900578C42 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 		2C15C70819C06FF200578C42 /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -77,6 +76,8 @@
 		2C31576F1D86E223006C9604 /* memo.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = memo.md; path = ../memo.md; sourceTree = "<group>"; };
 		2CC26CA31D9B4F590056177E /* DonationReminder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DonationReminder.xcodeproj; path = DonationReminder/DonationReminder.xcodeproj; sourceTree = "<group>"; };
 		2CC26CB61D9BDB340056177E /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
+		2CC26CB81D9BDDBA0056177E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2CC26CBA1D9BDDCD0056177E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		2CD6833E1D9A1866007BD256 /* ToyZip.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ToyZip.icns; sourceTree = "<group>"; };
 		5064FCAAFF6472CF57FE5D49 /* Pods-ToyZip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToyZip.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToyZip/Pods-ToyZip.release.xcconfig"; sourceTree = "<group>"; };
 		87D4A59475E35DBDE810CED8 /* libPods-ToyZip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ToyZip.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -229,6 +230,7 @@
 				en,
 				English,
 				ja,
+				Base,
 			);
 			mainGroup = 2C15C6D119BFFA1300578C42;
 			productRefGroup = 2C15C6DB19BFFA1300578C42 /* Products */;
@@ -363,7 +365,8 @@
 		2C15C6F319BFFA1300578C42 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2C15C6F419BFFA1300578C42 /* en */,
+				2CC26CB81D9BDDBA0056177E /* Base */,
+				2CC26CBA1D9BDDCD0056177E /* ja */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";

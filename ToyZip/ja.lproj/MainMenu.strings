@@ -1,0 +1,90 @@
+
+/* Class = "NSMenu"; title = "AMainMenu"; ObjectID = "29"; */
+"29.title" = "AMainMenu";
+
+/* Class = "NSMenuItem"; title = "ToyZip"; ObjectID = "56"; */
+"56.title" = "ToyZip";
+
+/* Class = "NSMenu"; title = "ToyZip"; ObjectID = "57"; */
+"57.title" = "ToyZip";
+
+/* Class = "NSMenuItem"; title = "About ToyZip"; ObjectID = "58"; */
+"58.title" = "About ToyZip";
+
+/* Class = "NSMenuItem"; title = "Open…"; ObjectID = "72"; */
+"72.title" = "Open…";
+
+/* Class = "NSMenu"; title = "File"; ObjectID = "81"; */
+"81.title" = "ファイル";
+
+/* Class = "NSMenuItem"; title = "File"; ObjectID = "83"; */
+"83.title" = "ファイル";
+
+/* Class = "NSMenuItem"; title = "Open Recent"; ObjectID = "124"; */
+"124.title" = "最近使った項目を開く";
+
+/* Class = "NSMenu"; title = "Open Recent"; ObjectID = "125"; */
+"125.title" = "最近使った項目を開く";
+
+/* Class = "NSMenuItem"; title = "Clear Menu"; ObjectID = "126"; */
+"126.title" = "メニューを消去";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "130"; */
+"130.title" = "サービス";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "131"; */
+"131.title" = "サービス";
+
+/* Class = "NSMenuItem"; title = "Hide ToyZip"; ObjectID = "134"; */
+"134.title" = "ToyZip を隠す";
+
+/* Class = "NSMenuItem"; title = "Quit ToyZip"; ObjectID = "136"; */
+"136.title" = "ToyZip を終了";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "145"; */
+"145.title" = "ほかを隠す";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "150"; */
+"150.title" = "すべてを表示";
+
+/* Class = "NSMenuItem"; title = "Copy"; ObjectID = "197"; */
+"197.title" = "コピー";
+
+/* Class = "NSMenuItem"; title = "Select All"; ObjectID = "198"; */
+"198.title" = "すべてを選択";
+
+/* Class = "NSMenuItem"; title = "Cut"; ObjectID = "199"; */
+"199.title" = "カット";
+
+/* Class = "NSMenuItem"; title = "Delete"; ObjectID = "202"; */
+"202.title" = "削除";
+
+/* Class = "NSMenuItem"; title = "Paste"; ObjectID = "203"; */
+"203.title" = "ペースト";
+
+/* Class = "NSMenu"; title = "Edit"; ObjectID = "205"; */
+"205.title" = "編集";
+
+/* Class = "NSMenuItem"; title = "Undo"; ObjectID = "207"; */
+"207.title" = "取り消す";
+
+/* Class = "NSMenuItem"; title = "Redo"; ObjectID = "215"; */
+"215.title" = "やり直す";
+
+/* Class = "NSMenuItem"; title = "Edit"; ObjectID = "217"; */
+"217.title" = "編集";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "490"; */
+"490.title" = "ヘルプ";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "491"; */
+"491.title" = "ヘルプ";
+
+/* Class = "NSMenuItem"; title = "ToyZip Help"; ObjectID = "492"; */
+"492.title" = "ToyZip ヘルプ";
+
+/* Class = "NSMenuItem"; title = "Make a Donation"; ObjectID = "a1p-fS-Opm"; */
+"a1p-fS-Opm.title" = "寄付する";
+
+/* Class = "NSMenuItem"; title = "Check for Updates..."; ObjectID = "lrf-Oy-Wxy"; */
+"lrf-Oy-Wxy.title" = "アップデートを確認...";
