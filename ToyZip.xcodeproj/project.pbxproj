@@ -215,6 +215,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0730;
+				TargetAttributes = {
+					2C15C6D919BFFA1300578C42 = {
+						DevelopmentTeam = 5VBC6385DN;
+					};
+				};
 			};
 			buildConfigurationList = 2C15C6D519BFFA1300578C42 /* Build configuration list for PBXProject "ToyZip" */;
 			compatibilityVersion = "Xcode 6.3";
@@ -438,6 +443,7 @@
 			baseConfigurationReference = 0DA69A249ED17ED9559DA980 /* Pods-ToyZip.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -459,6 +465,7 @@
 			baseConfigurationReference = 5064FCAAFF6472CF57FE5D49 /* Pods-ToyZip.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 2;
 				FRAMEWORK_SEARCH_PATHS = (
