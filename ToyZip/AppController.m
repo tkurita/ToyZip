@@ -5,6 +5,31 @@
 
 @implementation AppController
 
+
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication
+{
+#if useLog
+    NSLog(@"applicationShouldTerminateAfterLastWindowClosed");
+#endif
+    NSArray *wins = [NSApp windows];
+    // even a window of DonationReminder is remained, this method will be called.
+    // then check visivility of all windows.
+#if useLog
+    NSLog(@"Number of windows : %d", [wins count]);
+#endif
+    for (NSWindow *a_win in wins) {
+        if ([a_win isVisible]) return NO;
+    }
+    return YES;
+}
+
+- (void)terminateIfNoWindows
+{
+    if ([self applicationShouldTerminateAfterLastWindowClosed:NSApp]) {
+        [NSApp terminate:self];
+    }
+}
+
 /*
 - (void)applicationWillFinishLaunching:(NSNotification *)aNotification
 {
@@ -16,7 +41,6 @@
 {
     NSUserNotificationCenter *user_notification_center = [NSUserNotificationCenter defaultUserNotificationCenter];
     [user_notification_center setDelegate:self];
-	[DonationReminder remindDonation];
 
     NSDictionary *user_info = aNotification.userInfo;
     NSUserNotification *user_notification = [user_info objectForKey:NSApplicationLaunchUserNotificationKey];
@@ -60,6 +84,7 @@
                     break;
         }
     }
+    [self terminateIfNoWindows];
 }
 
 - (void)userNotificationCenter:(NSUserNotificationCenter *)center didActivateNotification:(NSUserNotification *)notification
@@ -79,5 +104,10 @@
 - (void)application:(NSApplication *)sender openFiles:(NSArray *)array
 {
     [fileProcessorInstance processFiles:array];
+}
+
+- (IBAction)makeDonation:(id)sender
+{
+    [DonationReminder goToDonation];
 }
 @end

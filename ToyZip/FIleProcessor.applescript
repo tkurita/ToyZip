@@ -18,7 +18,6 @@ script FileProcessor
                 display alert msg message "Error Number : " & errno
             end if
         end try
-        quit
     end processFinderSelection
     
     on main(a_list)
