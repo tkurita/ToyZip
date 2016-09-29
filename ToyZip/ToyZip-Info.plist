@@ -52,5 +52,9 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>CFBundleHelpBookFolder</key>
+	<string>ToyZipHelp</string>
+	<key>CFBundleHelpBookName</key>
+	<string>net.script-factory.ToyZip.help</string>
 </dict>
 </plist>
