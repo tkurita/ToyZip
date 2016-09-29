@@ -19,7 +19,7 @@
 		2C2E08971D9D650500BF51E6 /* ToyZipHelp in Resources */ = {isa = PBXBuildFile; fileRef = 2C2E08961D9D650500BF51E6 /* ToyZipHelp */; };
 		2C2E089A1D9D870900BF51E6 /* HelpSetup.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C2E08991D9D870900BF51E6 /* HelpSetup.plist */; };
 		2CC26CAB1D9B4F6B0056177E /* DonationReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC26CA81D9B4F590056177E /* DonationReminder.framework */; };
-		2CC26CAC1D9B4F740056177E /* DonationReminder.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CC26CA81D9B4F590056177E /* DonationReminder.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2CC26CAC1D9B4F740056177E /* DonationReminder.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 2CC26CA81D9B4F590056177E /* DonationReminder.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2CC26CB71D9BDB340056177E /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 2CC26CB61D9BDB340056177E /* dsa_pub.pem */; };
 		2CD6833F1D9A1866007BD256 /* ToyZip.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2CD6833E1D9A1866007BD256 /* ToyZip.icns */; };
 		B56DA1BC1DDFC962B4E6CADD /* libPods-ToyZip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D4A59475E35DBDE810CED8 /* libPods-ToyZip.a */; };
@@ -43,14 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2C15C70019C061EA00578C42 /* CopyFiles */ = {
+		2C15C70019C061EA00578C42 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2CC26CAC1D9B4F740056177E /* DonationReminder.framework in CopyFiles */,
+				2CC26CAC1D9B4F740056177E /* DonationReminder.framework in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -201,7 +202,8 @@
 				2C15C6D619BFFA1300578C42 /* Sources */,
 				2C15C6D719BFFA1300578C42 /* Frameworks */,
 				2C15C6D819BFFA1300578C42 /* Resources */,
-				2C15C70019C061EA00578C42 /* CopyFiles */,
+				2C15C70019C061EA00578C42 /* Copy Files */,
+				2C2E089B1D9D88D200BF51E6 /* ShellScript */,
 				F616B22E1A8421B9790CC201 /* [CP] Embed Pods Frameworks */,
 				90ECD8503576961272EEA631 /* [CP] Copy Pods Resources */,
 			);
@@ -283,6 +285,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2C2E089B1D9D88D200BF51E6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "if [ ! \"$CONFIGURATION\" = 'Release' ]; then\necho \"HelpBook setup script will run only with Release configuration\";\nexit 0\nfi\n\ncd \"$BUILT_PRODUCTS_DIR\"\nSetupHelpBook \"$FULL_PRODUCT_NAME\"\n";
+			showEnvVarsInLog = 0;
+		};
 		90ECD8503576961272EEA631 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
