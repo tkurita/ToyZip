@@ -2,7 +2,7 @@ script FileProcessor
     property parent : class "NSObject"
     
     property FinderSelection : "@module"
-    property XFile : "@module"
+    property XFile : "@module"    
     property _ : script "ModuleLoader"'s setup(me)
     
     on processFinderSelection()
