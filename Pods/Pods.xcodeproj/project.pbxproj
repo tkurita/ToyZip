@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 47;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,13 +11,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		222789BF8F0F93893BC4159EBE325B80 /* libPods-ToyZip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ToyZip.a"; path = "libPods-ToyZip.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		222789BF8F0F93893BC4159EBE325B80 /* libPods-ToyZip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ToyZip.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C81F5EEC0794567B26828CB07F953EF /* Pods-ToyZip-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ToyZip-resources.sh"; sourceTree = "<group>"; };
 		52C87D0CBB56A0DD380592A747E7B804 /* Pods-ToyZip-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ToyZip-acknowledgements.plist"; sourceTree = "<group>"; };
 		6DAAA4324F2A4532E19F36E5155400B4 /* Pods-ToyZip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ToyZip.debug.xcconfig"; sourceTree = "<group>"; };
 		7034763EF2572DCE53A91244994AC6F8 /* Pods-ToyZip-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ToyZip-frameworks.sh"; sourceTree = "<group>"; };
 		8C2D4AD913FFA4318C5341A3E02A3EA7 /* Pods-ToyZip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ToyZip.release.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; };
 		94825BE9A43D685A33E1CAF596FF36BE /* Pods-ToyZip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ToyZip-dummy.m"; sourceTree = "<group>"; };
 		E2593091EE6806664047116A3809B8C5 /* Pods-ToyZip-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ToyZip-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FCCD3866C838F21B08E660964D16649C /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
@@ -61,7 +61,6 @@
 			children = (
 				634590055027CF510BE8FF8332E15655 /* Frameworks */,
 			);
-			name = Sparkle;
 			path = Sparkle;
 			sourceTree = "<group>";
 		};
@@ -141,6 +140,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;

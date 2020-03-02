@@ -4,7 +4,7 @@ script FileProcessor
     property FinderSelection : "@module"
     property XFile : "@module"    
     property _ : script "ModuleLoader"'s setup(me)
-    
+
     on processFinderSelection()
         try
             tell my FinderSelection's make_for_item()
