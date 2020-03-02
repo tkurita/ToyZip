@@ -79,6 +79,7 @@
 		2C2E08961D9D650500BF51E6 /* ToyZipHelp */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ToyZipHelp; sourceTree = "<group>"; };
 		2C2E08991D9D870900BF51E6 /* HelpSetup.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HelpSetup.plist; sourceTree = "<group>"; };
 		2C31576F1D86E223006C9604 /* memo.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = memo.md; path = ../memo.md; sourceTree = "<group>"; };
+		2C58E468240CD3FD0063F8BB /* ToyZip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = ToyZip.entitlements; path = ToyZip/ToyZip.entitlements; sourceTree = "<group>"; };
 		2CC26CA31D9B4F590056177E /* DonationReminder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DonationReminder.xcodeproj; path = DonationReminder/DonationReminder.xcodeproj; sourceTree = "<group>"; };
 		2CC26CB61D9BDB340056177E /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		2CC26CB81D9BDDBA0056177E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -106,6 +107,7 @@
 		2C15C6D119BFFA1300578C42 = {
 			isa = PBXGroup;
 			children = (
+				2C58E468240CD3FD0063F8BB /* ToyZip.entitlements */,
 				2C31576F1D86E223006C9604 /* memo.md */,
 				2C15C6E519BFFA1300578C42 /* ZoyZip */,
 				2C15C6DC19BFFA1300578C42 /* Frameworks */,
@@ -293,7 +295,7 @@
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
-			shellPath = /bin/sh;
+			shellPath = "/bin/zsh -l";
 			shellScript = "if [ ! \"$CONFIGURATION\" = 'Release' ]; then\necho \"HelpBook setup script will run only with Release configuration\";\nexit 0\nfi\n\ncd \"$BUILT_PRODUCTS_DIR\"\nSetupHelpBook \"$FULL_PRODUCT_NAME\"\n";
 			showEnvVarsInLog = 0;
 		};
@@ -495,6 +497,7 @@
 			baseConfigurationReference = 0DA69A249ED17ED9559DA980 /* Pods-ToyZip.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = ToyZip/ToyZip.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 3;
@@ -519,6 +522,7 @@
 			baseConfigurationReference = 5064FCAAFF6472CF57FE5D49 /* Pods-ToyZip.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = ToyZip/ToyZip.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 3;
